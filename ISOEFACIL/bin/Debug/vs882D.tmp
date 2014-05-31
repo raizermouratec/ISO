@@ -1,0 +1,138 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ISOEFACIL
+</name>
+</assembly>
+<members>
+<member name="M:ISOEFACIL.acAddListaItensAdd.contador">
+	<summary>
+ CONTADOR.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarTipoDoc">
+	<summary>
+ Carrega a lista de tipos de documentos.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarTipoDocComposicao">
+	<summary>
+ Carrega a lista de tipos de documentos Composição.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarListComposicao">
+	<summary>
+ Carrega a lista de tipos de Composicao.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregaListAtividades">
+	<summary>
+ Carrega a Lista de Atividades.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridTpDocComposicao_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid Tipo Coomposição.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridAtvdDoc_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid ATividades
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridUsuarioAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid Aprovadores Selecionados.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.C1Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão [ =&gt; ] 
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.cmbCargoAprovador_ChangeCommitted(System.Object,System.EventArgs)">
+	<summary>
+ Carrega Lista de Cargo Aprovador.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.botSalvarAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão Salvar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.botCancelarAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão Cancelar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.botAddAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Adiciona na Lista os Aprovadores selecionados.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:ISOEFACIL.rptAreas.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptAreas.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptAreas.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigAddDocs.btAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ Salvar
+ </summary>
+</member><member name="M:ISOEFACIL.DocContDoc.ControlaTab">
+	<summary>
+ Controla as tabs 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.melCadMelhorias.contador">
+	<summary>
+ CONTADOR.
+ </summary>
+</member><member name="F:ISOEFACIL.audCadAuditores.FOTO">
+ FOTO
+
+</member><member name="F:ISOEFACIL.audCadAuditores.isEdit">
+ Variavel global que contera o valor passado
+
+</member><member name="P:ISOEFACIL.audCadAuditores.Auditor">
+ Pega Id Contrato
+
+</member><member name="P:ISOEFACIL.audCadAuditores.ClienteS">
+ Pega Id Contrato
+
+</member><member name="P:ISOEFACIL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ISOEFACIL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ISOEFACIL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

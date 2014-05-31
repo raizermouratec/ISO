@@ -1,0 +1,15 @@
+﻿Imports System
+Imports System.Collections
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Windows.Forms
+Imports System.IO
+
+Public Class docElaborar
+
+
+
+    Private Sub docElaborar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

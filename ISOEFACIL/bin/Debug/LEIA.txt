@@ -1,0 +1,17 @@
+COLOQUE OS DOIS ARQUIVOS NA PASTA Debug do ISO.
+
+ISOEFACIL\bin\Debug
+
+No projeto.
+Va em Manual de Gestão > mgListaItensManual > botTexto_Click:
+
+e coloque esse codigo:
+
+ '//Arquivos de fora do projeto devem ficar na pasta "Debug"...
+        System.Diagnostics.Process.Start(My.Application.Info.DirectoryPath & "\RicherTextBoxDemo.exe")
+        'mgTextoItensManual.ShowDialog()
+
+-------
+Rodar o sistema...
+
+Abraço

@@ -1,0 +1,1583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A386458C-4EB3-47C8-A2D9-D3A27A6F680C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ISOEFACIL.My.MyApplication</StartupObject>
+    <RootNamespace>ISOEFACIL</RootNamespace>
+    <AssemblyName>ISOEFACIL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ISOEFACIL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ISOEFACIL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Pdf.4, Version=4.1.20111.165, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Report.4, Version=4.6.20111.54307, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.4, Version=4.0.20111.21027, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Chart3D.4, Version=4.0.20111.21027, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20111.19475, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1DynamicHelp.4, Version=4.0.20111.44, Culture=neutral, PublicKeyToken=f95c5890a3995862, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Editor.4, Version=4.0.20111.68, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20111.602, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20111.33260, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4, Version=4.0.20111.116, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1List.4, Version=4.1.20111.176, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.6.20111.54307, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20111.88, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="C1.Win.C1Ribbon" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manager\Análise Crítica\Dados\acCadAnaliseDados.Designer.vb">
+      <DependentUpon>acCadAnaliseDados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acCadAnaliseDados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acListaItens.Designer.vb">
+      <DependentUpon>acListaItens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acListaItens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acAddListaItensAdd.Designer.vb">
+      <DependentUpon>acAddListaItensAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acAddListaItensAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acListaDados.Designer.vb">
+      <DependentUpon>acListaDados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acListaDados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acResultado.Designer.vb">
+      <DependentUpon>acResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\acResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Dados\Classes\Resultado.vb" />
+    <Compile Include="Manager\Análise Crítica\Dados\Classes\Dados.vb" />
+    <Compile Include="Manager\Análise Crítica\Dados\Classes\Itens.vb" />
+    <Compile Include="Manager\Análise Crítica\Decisões\acCadDecisoes.Designer.vb">
+      <DependentUpon>acCadDecisoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Decisões\acCadDecisoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Decisões\acListaDecisoes.Designer.vb">
+      <DependentUpon>acListaDecisoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Decisões\acListaDecisoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Decisões\Classes\Decisoes.vb" />
+    <Compile Include="Manager\Análise Crítica\Programa Anual\acAddPlanoAnual.Designer.vb">
+      <DependentUpon>acAddPlanoAnual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Programa Anual\acAddPlanoAnual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Programa Anual\acPlanoAnual.Designer.vb">
+      <DependentUpon>acPlanoAnual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Programa Anual\acPlanoAnual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Programa Anual\Classes\planoAnualAc.vb" />
+    <Compile Include="Manager\Análise Crítica\Reuniões\acCadAnaliseReuniao.Designer.vb">
+      <DependentUpon>acCadAnaliseReuniao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Reuniões\acCadAnaliseReuniao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Reuniões\acListaReuniao.Designer.vb">
+      <DependentUpon>acListaReuniao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Reuniões\acListaReuniao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Análise Crítica\Reuniões\Classes\Reuniao.vb" />
+    <Compile Include="Manager\Auditorias\Auditores\audListaAuditores.Designer.vb">
+      <DependentUpon>audListaAuditores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Auditores\audListaAuditores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Auditores\audCadAuditores.Designer.vb">
+      <DependentUpon>audCadAuditores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Auditores\audCadAuditores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Auditores\Classes\Auditores.vb" />
+    <Compile Include="Manager\Auditorias\CheckList\audChecklist.Designer.vb">
+      <DependentUpon>audChecklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\CheckList\audChecklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\CheckList\audPerguntasChecklist.Designer.vb">
+      <DependentUpon>audPerguntasChecklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\CheckList\audPerguntasChecklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\CheckList\Classes\checkList.vb" />
+    <Compile Include="Manager\Auditorias\Programação\audItensProgAuditorias.Designer.vb">
+      <DependentUpon>audItensProgAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\audItensProgAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\audAddProgAuditorias.Designer.vb">
+      <DependentUpon>audAddProgAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\audAddProgAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\audProgramacaoAuditorias.Designer.vb">
+      <DependentUpon>audProgramacaoAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\audProgramacaoAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Programação\Classes\PlanoAnualAuditoria.vb" />
+    <Compile Include="Manager\Auditorias\Controle\audControleAuditorias.Designer.vb">
+      <DependentUpon>audControleAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Controle\audControleAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audConformidadeAuditoria.Designer.vb">
+      <DependentUpon>audConformidadeAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audConformidadeAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audEvidenciaConformidade.Designer.vb">
+      <DependentUpon>audEvidenciaConformidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audEvidenciaConformidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audNaoConformidade.Designer.vb">
+      <DependentUpon>audNaoConformidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audNaoConformidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audRealizacaoAuditorias.Designer.vb">
+      <DependentUpon>audRealizacaoAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audRealizacaoAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audRealizarAuditorias.Designer.vb">
+      <DependentUpon>audRealizarAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\audRealizarAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Realização\Classes\AC_Apontadas.vb" />
+    <Compile Include="Manager\Auditorias\Realização\Classes\NC_Apontadas.vb" />
+    <Compile Include="Manager\Auditorias\Realização\Classes\Realizacao.vb" />
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audCadTipoAuditorias.Designer.vb">
+      <DependentUpon>audCadTipoAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audCadTipoAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audListaTipoAuditorias.Designer.vb">
+      <DependentUpon>audListaTipoAuditorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audListaTipoAuditorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\Classes\Estrutura.vb" />
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\Classes\TipoAuditorias.vb" />
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audEstrutura.Designer.vb">
+      <DependentUpon>audEstrutura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\audEstrutura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\RibbonForm1.Designer.vb">
+      <DependentUpon>RibbonForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Auditorias\Tipo Auditoria\RibbonForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\Classes\avaliacao.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Perfil\forListaPerfil.Designer.vb">
+      <DependentUpon>forListaPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Perfil\forListaPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Perfil\forCadPerfil.Designer.vb">
+      <DependentUpon>forCadPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Perfil\forCadPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadAvaliacao.Designer.vb">
+      <DependentUpon>forCadAvaliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadAvaliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadCriterios.Designer.vb">
+      <DependentUpon>forCadCriterios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadCriterios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadRequisitos.Designer.vb">
+      <DependentUpon>forCadRequisitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forCadRequisitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forListaAvaliacao.Designer.vb">
+      <DependentUpon>forListaAvaliacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Avaliação\forListaAvaliacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\Classes\fornecedores.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\Classes\produtosservicos.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\Classes\requisitos.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\forCadFornecedores.Designer.vb">
+      <DependentUpon>forCadFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\forCadFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\forListaFornecedores.Designer.vb">
+      <DependentUpon>forListaFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Fornecedores\forListaFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\Classes\ocorrencias.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\Classes\ocorrenciasFornecedor.vb" />
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\forCadOcorrencias.Designer.vb">
+      <DependentUpon>forCadOcorrencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\forCadOcorrencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\forListaOcorrencias.Designer.vb">
+      <DependentUpon>forListaOcorrencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Avaliação de Fornecedores\Ocorrências\forListaOcorrencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Programação\calProgramacaoCalibracao.Designer.vb">
+      <DependentUpon>calProgramacaoCalibracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Programação\calProgramacaoCalibracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizarCalibracoes.Designer.vb">
+      <DependentUpon>calRealizarCalibracoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizarCalibracoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizacaoCalibracoesExternas.Designer.vb">
+      <DependentUpon>calRealizacaoCalibracoesExternas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizacaoCalibracoesExternas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizacaoCalibracoesInternas.Designer.vb">
+      <DependentUpon>calRealizacaoCalibracoesInternas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calRealizacaoCalibracoesInternas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calResultadosObtidos.Designer.vb">
+      <DependentUpon>calResultadosObtidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\calResultadosObtidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Realização\Classes\Realizar.vb" />
+    <Compile Include="Manager\Calibração\Realização\Classes\Externo.vb" />
+    <Compile Include="Manager\Calibração\Realização\Classes\Interno.vb" />
+    <Compile Include="Manager\Calibração\Realização\Classes\Medicao.vb" />
+    <Compile Include="Manager\Calibração\Instrumentos\calAddTipoMedicao.Designer.vb">
+      <DependentUpon>calAddTipoMedicao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calAddTipoMedicao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calCadInstrumentos.Designer.vb">
+      <DependentUpon>calCadInstrumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calCadInstrumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calJustificar.Designer.vb">
+      <DependentUpon>calJustificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calJustificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\Classes\Instrumentos.vb" />
+    <Compile Include="Manager\Calibração\Instrumentos\Classes\TipoMedicao.vb" />
+    <Compile Include="Manager\Calibração\Instrumentos\calListaInstrumentos.Designer.vb">
+      <DependentUpon>calListaInstrumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Instrumentos\calListaInstrumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Programação\calAddProgCalibracao.Designer.vb">
+      <DependentUpon>calAddProgCalibracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Calibração\Programação\calAddProgCalibracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Calibração\Programação\Classes\PlanoAnualCalibracao.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\Classes\Curriculo.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadCursos.Designer.vb">
+      <DependentUpon>cotrCadCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadCursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadExperiencia.Designer.vb">
+      <DependentUpon>cotrCadExperiencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadExperiencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadFormacao.Designer.vb">
+      <DependentUpon>cotrCadFormacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadFormacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadHabilidades.Designer.vb">
+      <DependentUpon>cotrCadHabilidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCadHabilidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCurriculo.Designer.vb">
+      <DependentUpon>cotrCurriculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Currículo\cotrCurriculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Programação\Classes\PlanoAnualTreinamento.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Programação\cotrAddProgTreinamentos.Designer.vb">
+      <DependentUpon>cotrAddProgTreinamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Programação\cotrAddProgTreinamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Programação\cotrProgramacaoTreinamentos.Designer.vb">
+      <DependentUpon>cotrProgramacaoTreinamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Programação\cotrProgramacaoTreinamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Realização\Classes\RealizacaoTreinamentos.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Realização\cotrRealizacaoTreinamentos.Designer.vb">
+      <DependentUpon>cotrRealizacaoTreinamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Realização\cotrRealizacaoTreinamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Realização\cotrRealizarTreinamentos.Designer.vb">
+      <DependentUpon>cotrRealizarTreinamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Realização\cotrRealizarTreinamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadAreas.Designer.vb">
+      <DependentUpon>configCadAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadColaboradores.Designer.vb">
+      <DependentUpon>configCadColaboradores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadColaboradores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Cadastro\docCadDocNovo.Designer.vb">
+      <DependentUpon>docCadDocNovo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Cadastro\docCadDocNovo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Configurações\Classes\configuracaoDoc.vb" />
+    <Compile Include="Manager\Documentação\Configurações\docConfigAddDocs.Designer.vb">
+      <DependentUpon>docConfigAddDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Configurações\docConfigAddDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Configurações\docConfigDocs.Designer.vb">
+      <DependentUpon>docConfigDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Configurações\docConfigDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\Classes\documentos.vb" />
+    <Compile Include="Manager\Documentação\Elaboração\Classe\elaboracao.vb" />
+    <Compile Include="Manager\Documentação\Controle\docContCancelar.Designer.vb">
+      <DependentUpon>docContCancelar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\docContCancelar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\docContDoc.Designer.vb">
+      <DependentUpon>docContDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\docContDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\docContRevisar.Designer.vb">
+      <DependentUpon>docContRevisar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Controle\docContRevisar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAddAtividade.Designer.vb">
+      <DependentUpon>docAddAtividade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAddAtividade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAddAtividades.Designer.vb">
+      <DependentUpon>docAddAtividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAddAtividades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAnexosElaboracao.Designer.vb">
+      <DependentUpon>docAnexosElaboracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docAnexosElaboracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docElabIncluiAtv.Designer.vb">
+      <DependentUpon>docElabIncluiAtv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docElabIncluiAtv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docElaboracao.Designer.vb">
+      <DependentUpon>docElaboracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docElaboracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docElaborar.Designer.vb">
+      <DependentUpon>docElaborar.vb.bak</DependentUpon>
+    </Compile>
+    <None Include="Manager\Documentação\Elaboração\docElaborar.vb.bak">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="Manager\Documentação\Elaboração\docVincularDocElaboracao.Designer.vb">
+      <DependentUpon>docVincularDocElaboracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Elaboração\docVincularDocElaboracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Externos\Classes\ExternosDoc.vb" />
+    <Compile Include="Manager\Documentação\Externos\docAnexosExternos.Designer.vb">
+      <DependentUpon>docAnexosExternos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Externos\docAnexosExternos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Externos\docExternos.Designer.vb">
+      <DependentUpon>docExternos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Externos\docExternos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Documentação\Registros\Classes\registros.vb" />
+    <Compile Include="Manager\Documentação\Registros\Classes\registrosdoc.vb" />
+    <Compile Include="Manager\Documentação\Registros\docRegistros.Designer.vb">
+      <DependentUpon>docRegistros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Documentação\Registros\docRegistros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\Classes\Aprovacao.vb" />
+    <Compile Include="Manager\Manual de Gestão\Controle\Classes\ControleManuais.vb" />
+    <Compile Include="Manager\Manual de Gestão\Controle\Classes\CopiasManuais.vb" />
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAlteracoesControleManual.Designer.vb">
+      <DependentUpon>mgAlteracoesControleManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAlteracoesControleManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAnexosControleManual.Designer.vb">
+      <DependentUpon>mgAnexosControleManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAnexosControleManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAprovControleManual.Designer.vb">
+      <DependentUpon>mgAprovControleManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgAprovControleManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgCadControleManual.Designer.vb">
+      <DependentUpon>mgCadControleManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgCadControleManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgCadCopiasManual.Designer.vb">
+      <DependentUpon>mgCadCopiasManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgCadCopiasManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgListaControleManual.Designer.vb">
+      <DependentUpon>mgListaControleManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Controle\mgListaControleManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\Classes\Apresentacao.vb" />
+    <Compile Include="Manager\Manual de Gestão\Elaboração\Classes\FolhadeRosto.vb" />
+    <Compile Include="Manager\Manual de Gestão\Elaboração\Classes\Titulo.vb" />
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgApresentacaoElaboracaoManual.Designer.vb">
+      <DependentUpon>mgApresentacaoElaboracaoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgApresentacaoElaboracaoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgFolhadeRostoElaboracaoManual.Designer.vb">
+      <DependentUpon>mgFolhadeRostoElaboracaoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgFolhadeRostoElaboracaoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgListaElaboracaoManual.Designer.vb">
+      <DependentUpon>mgListaElaboracaoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgListaElaboracaoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgTextoElaboracaoManual.Designer.vb">
+      <DependentUpon>mgTextoElaboracaoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgTextoElaboracaoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgTituloElaboracaoManual.Designer.vb">
+      <DependentUpon>mgTituloElaboracaoManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Elaboração\mgTituloElaboracaoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Escopo\Classes\Escopo.vb" />
+    <Compile Include="Manager\Manual de Gestão\Escopo\mgEscopo.Designer.vb">
+      <DependentUpon>mgEscopo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manual de Gestão\Escopo\mgEscopo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Melhorias\Classes\Autorizacao.vb" />
+    <Compile Include="Manager\Melhorias\melAutorizacao.Designer.vb">
+      <DependentUpon>melAutorizacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melAutorizacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objAddUnidadeMedicao.Designer.vb">
+      <DependentUpon>objAddUnidadeMedicao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objAddUnidadeMedicao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\Classes\UnidadeMedicao.vb" />
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objCadObjetivos.Designer.vb">
+      <DependentUpon>objCadObjetivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objCadObjetivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Processos\Classes\Atividade.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Cargos\cotrListaCargos.Designer.vb">
+      <DependentUpon>cotrListaCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Cargos\cotrListaCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastro de Senhas\configSenhasPrincipal.Designer.vb">
+      <DependentUpon>configSenhasPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastro de Senhas\configSenhasPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\Classes\Areas.vb" />
+    <Compile Include="Manager\Competência e Treinamentos\Cargos\Classes\Cargos.vb" />
+    <Compile Include="Manager\Configurações\Cadastros Básicos\Classes\CargosBasicos.vb" />
+    <Compile Include="Manager\Configurações\Cadastros Básicos\Classes\Colaboradores.vb" />
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configListaBasico.Designer.vb">
+      <DependentUpon>configListaBasico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configListaBasico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Cargos\cotrCadCargos.Designer.vb">
+      <DependentUpon>cotrCadCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Competência e Treinamentos\Cargos\cotrCadCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadCargos.Designer.vb">
+      <DependentUpon>configCadCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Cadastros Básicos\configCadCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Opções de Sistema\Classes\fornecedorAvaliacao.vb" />
+    <Compile Include="Manager\Configurações\Opções de Sistema\configOpcoesPrincipal.Designer.vb">
+      <DependentUpon>configOpcoesPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Opções de Sistema\configOpcoesPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Configurações\Preferências de Usuário\configPrefUsuarios.Designer.vb">
+      <DependentUpon>configPrefUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Configurações\Preferências de Usuário\configPrefUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Geral\Classes\Anexos.vb" />
+    <Compile Include="Manager\Geral\Classes\Contatos.vb" />
+    <Compile Include="Manager\Geral\geralCadAnexo.Designer.vb">
+      <DependentUpon>geralCadAnexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Geral\geralCadAnexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Geral\geralCadContato.Designer.vb">
+      <DependentUpon>geralCadContato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Geral\geralCadContato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Global.vb" />
+    <Compile Include="Manager\Manager.vb" />
+    <Compile Include="Manager\Melhorias\Classes\AcoesNecessarias.vb" />
+    <Compile Include="Manager\Melhorias\Classes\AnaliseEficacia.vb" />
+    <Compile Include="Manager\Melhorias\Classes\Estruturado.vb" />
+    <Compile Include="Manager\Melhorias\Classes\Melhorias.vb" />
+    <Compile Include="Manager\Melhorias\melEstruturado.Designer.vb">
+      <DependentUpon>melEstruturado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melEstruturado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melListaMelhorias.Designer.vb">
+      <DependentUpon>melListaMelhorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melListaMelhorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melCadMelhorias.Designer.vb">
+      <DependentUpon>melCadMelhorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Melhorias\melCadMelhorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\Classes\Objetivos.vb" />
+    <Compile Include="Manager\Política e Objetivos\Objetivos\Classes\Resultados.vb" />
+    <Compile Include="Manager\Política e Objetivos\Politicas\Classes\Politica.vb" />
+    <Compile Include="Manager\Política e Objetivos\Politicas\poliCadPolitica.Designer.vb">
+      <DependentUpon>poliCadPolitica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Politicas\poliCadPolitica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objListaObjetivos.Designer.vb">
+      <DependentUpon>objListaObjetivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Objetivos\objListaObjetivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Politicas\poliListaPolitica.Designer.vb">
+      <DependentUpon>poliListaPolitica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Política e Objetivos\Politicas\poliListaPolitica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\principal.Designer.vb">
+      <DependentUpon>principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Processos\Classes\Processo.vb" />
+    <Compile Include="Manager\Produtos e Processos\Produtos\Classes\Classificacao.vb" />
+    <Compile Include="Manager\Produtos e Processos\Processos\procCadProcessos.Designer.vb">
+      <DependentUpon>procCadProcessos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Processos\procCadProcessos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Processos\procListaProcessos.Designer.vb">
+      <DependentUpon>procListaProcessos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Processos\procListaProcessos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\Classes\Produto.vb" />
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodCadClassificacao.Designer.vb">
+      <DependentUpon>prodCadClassificacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodCadClassificacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodCadProdutos.Designer.vb">
+      <DependentUpon>prodCadProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodCadProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodListaProdutos.Designer.vb">
+      <DependentUpon>prodListaProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Produtos e Processos\Produtos\prodListaProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\Classes\ObjEstruturado.vb" />
+    <Compile Include="Manager\Projetos\Projetos\Classes\Equipe.vb" />
+    <Compile Include="Manager\Projetos\Projetos\projCadRisco.Designer.vb">
+      <DependentUpon>projCadRisco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadRisco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadRecursos.Designer.vb">
+      <DependentUpon>projCadRecursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadRecursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleAC.Designer.vb">
+      <DependentUpon>projCadControleAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleVerificacao.Designer.vb">
+      <DependentUpon>projCadControleVerificacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleVerificacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleValidacao.Designer.vb">
+      <DependentUpon>projCadControleValidacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadControleValidacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEstagios5w2h.Designer.vb">
+      <DependentUpon>projCadEstagios5w2h.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEstagios5w2h.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Resultados\Classes\ResultadosProjeto.vb" />
+    <Compile Include="Manager\Projetos\Ocorrências\Classes\OcorrenciasProjeto.vb" />
+    <Compile Include="Manager\Projetos\Projetos\Classes\PlanoProjeto.vb" />
+    <Compile Include="Manager\Projetos\Projetos\Classes\Projeto.vb" />
+    <Compile Include="Manager\Projetos\Projetos\projCadProjeto.Designer.vb">
+      <DependentUpon>projCadProjeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadProjeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEquipe.Designer.vb">
+      <DependentUpon>projCadEquipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEquipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projPlanodeProjeto.Designer.vb">
+      <DependentUpon>projPlanodeProjeto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projPlanodeProjeto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projListaProjetos.Designer.vb">
+      <DependentUpon>projListaProjetos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projListaProjetos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadObjetivoEstruturado.Designer.vb">
+      <DependentUpon>projCadObjetivoEstruturado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadObjetivoEstruturado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadRevisoes.Designer.vb">
+      <DependentUpon>projCadRevisoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadRevisoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Ocorrências\projRegOcorrências.Designer.vb">
+      <DependentUpon>projRegOcorrências.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Ocorrências\projRegOcorrências.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Ocorrências\projListaOcorrencias.Designer.vb">
+      <DependentUpon>projListaOcorrencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Ocorrências\projListaOcorrencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Resultados\projListaResultados.Designer.vb">
+      <DependentUpon>projListaResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Resultados\projListaResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Resultados\projRegResultados.Designer.vb">
+      <DependentUpon>projRegResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Resultados\projRegResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEstagiosAtividade.Designer.vb">
+      <DependentUpon>projCadEstagiosAtividade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Projetos\Projetos\projCadEstagiosAtividade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemColaboradores.Designer.vb">
+      <DependentUpon>rptListagemColaboradores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemColaboradores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemCargos.Designer.vb">
+      <DependentUpon>rptListagemCargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemCargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemAreas.Designer.vb">
+      <DependentUpon>rptListagemAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioDados.Designer.vb">
+      <DependentUpon>rptUnitarioDados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioDados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioReunioes.Designer.vb">
+      <DependentUpon>rptUnitarioReunioes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioReunioes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioDecisoes.Designer.vb">
+      <DependentUpon>rptUnitarioDecisoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioDecisoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioFornecedores.Designer.vb">
+      <DependentUpon>rptUnitarioFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemClientes.Designer.vb">
+      <DependentUpon>rptListagemClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioProjetos.Designer.vb">
+      <DependentUpon>rptUnitarioProjetos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioProjetos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioPolitica.Designer.vb">
+      <DependentUpon>rptUnitarioPolitica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptUnitarioPolitica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemPolitica.Designer.vb">
+      <DependentUpon>rptListagemPolitica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemPolitica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemProjetos.Designer.vb">
+      <DependentUpon>rptListagemProjetos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatórios\rptListagemProjetos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Manager\Análise Crítica\Dados\acCadAnaliseDados.resx">
+      <DependentUpon>acCadAnaliseDados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Dados\acListaItens.resx">
+      <DependentUpon>acListaItens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Dados\acAddListaItensAdd.resx">
+      <DependentUpon>acAddListaItensAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Dados\acListaDados.resx">
+      <DependentUpon>acListaDados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Dados\acResultado.resx">
+      <DependentUpon>acResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Decisões\acCadDecisoes.resx">
+      <DependentUpon>acCadDecisoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Decisões\acListaDecisoes.resx">
+      <DependentUpon>acListaDecisoes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Programa Anual\acAddPlanoAnual.resx">
+      <DependentUpon>acAddPlanoAnual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Programa Anual\acPlanoAnual.resx">
+      <DependentUpon>acPlanoAnual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Reuniões\acCadAnaliseReuniao.resx">
+      <DependentUpon>acCadAnaliseReuniao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Análise Crítica\Reuniões\acListaReuniao.resx">
+      <DependentUpon>acListaReuniao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Auditores\audListaAuditores.resx">
+      <DependentUpon>audListaAuditores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Auditores\audCadAuditores.resx">
+      <DependentUpon>audCadAuditores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\CheckList\audChecklist.resx">
+      <DependentUpon>audChecklist.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\CheckList\audPerguntasChecklist.resx">
+      <DependentUpon>audPerguntasChecklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Programação\audItensProgAuditorias.resx">
+      <DependentUpon>audItensProgAuditorias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Programação\audAddProgAuditorias.resx">
+      <DependentUpon>audAddProgAuditorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Programação\audProgramacaoAuditorias.resx">
+      <DependentUpon>audProgramacaoAuditorias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Controle\audControleAuditorias.resx">
+      <DependentUpon>audControleAuditorias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Realização\audConformidadeAuditoria.resx">
+      <DependentUpon>audConformidadeAuditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Realização\audEvidenciaConformidade.resx">
+      <DependentUpon>audEvidenciaConformidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Realização\audNaoConformidade.resx">
+      <DependentUpon>audNaoConformidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Realização\audRealizacaoAuditorias.resx">
+      <DependentUpon>audRealizacaoAuditorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Realização\audRealizarAuditorias.resx">
+      <DependentUpon>audRealizarAuditorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Tipo Auditoria\audCadTipoAuditorias.resx">
+      <DependentUpon>audCadTipoAuditorias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Tipo Auditoria\audListaTipoAuditorias.resx">
+      <DependentUpon>audListaTipoAuditorias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Tipo Auditoria\audEstrutura.resx">
+      <DependentUpon>audEstrutura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Auditorias\Tipo Auditoria\RibbonForm1.resx">
+      <DependentUpon>RibbonForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Perfil\forListaPerfil.resx">
+      <DependentUpon>forListaPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Perfil\forCadPerfil.resx">
+      <DependentUpon>forCadPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Avaliação\forCadAvaliacao.resx">
+      <DependentUpon>forCadAvaliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Avaliação\forCadCriterios.resx">
+      <DependentUpon>forCadCriterios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Avaliação\forCadRequisitos.resx">
+      <DependentUpon>forCadRequisitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Avaliação\forListaAvaliacao.resx">
+      <DependentUpon>forListaAvaliacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Fornecedores\forCadFornecedores.resx">
+      <DependentUpon>forCadFornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Fornecedores\forListaFornecedores.resx">
+      <DependentUpon>forListaFornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Ocorrências\forCadOcorrencias.resx">
+      <DependentUpon>forCadOcorrencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Avaliação de Fornecedores\Ocorrências\forListaOcorrencias.resx">
+      <DependentUpon>forListaOcorrencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Programação\calProgramacaoCalibracao.resx">
+      <DependentUpon>calProgramacaoCalibracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Realização\calRealizarCalibracoes.resx">
+      <DependentUpon>calRealizarCalibracoes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Realização\calRealizacaoCalibracoesExternas.resx">
+      <DependentUpon>calRealizacaoCalibracoesExternas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Realização\calRealizacaoCalibracoesInternas.resx">
+      <DependentUpon>calRealizacaoCalibracoesInternas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Realização\calResultadosObtidos.resx">
+      <DependentUpon>calResultadosObtidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Instrumentos\calAddTipoMedicao.resx">
+      <DependentUpon>calAddTipoMedicao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Instrumentos\calCadInstrumentos.resx">
+      <DependentUpon>calCadInstrumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Instrumentos\calJustificar.resx">
+      <DependentUpon>calJustificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Instrumentos\calListaInstrumentos.resx">
+      <DependentUpon>calListaInstrumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Calibração\Programação\calAddProgCalibracao.resx">
+      <DependentUpon>calAddProgCalibracao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Currículo\cotrCadCursos.resx">
+      <DependentUpon>cotrCadCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Currículo\cotrCadExperiencia.resx">
+      <DependentUpon>cotrCadExperiencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Currículo\cotrCadFormacao.resx">
+      <DependentUpon>cotrCadFormacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Currículo\cotrCadHabilidades.resx">
+      <DependentUpon>cotrCadHabilidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Currículo\cotrCurriculo.resx">
+      <DependentUpon>cotrCurriculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Programação\cotrAddProgTreinamentos.resx">
+      <DependentUpon>cotrAddProgTreinamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Programação\cotrProgramacaoTreinamentos.resx">
+      <DependentUpon>cotrProgramacaoTreinamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Realização\cotrRealizacaoTreinamentos.resx">
+      <DependentUpon>cotrRealizacaoTreinamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Realização\cotrRealizarTreinamentos.resx">
+      <DependentUpon>cotrRealizarTreinamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Cadastros Básicos\configCadAreas.resx">
+      <DependentUpon>configCadAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Cadastros Básicos\configCadColaboradores.resx">
+      <DependentUpon>configCadColaboradores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Cadastro\docCadDocNovo.resx">
+      <DependentUpon>docCadDocNovo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Configurações\docConfigAddDocs.resx">
+      <DependentUpon>docConfigAddDocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Configurações\docConfigDocs.resx">
+      <DependentUpon>docConfigDocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Controle\docContCancelar.resx">
+      <DependentUpon>docContCancelar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Controle\docContDoc.resx">
+      <DependentUpon>docContDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Controle\docContRevisar.resx">
+      <DependentUpon>docContRevisar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docAddAtividade.resx">
+      <DependentUpon>docAddAtividade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docAddAtividades.resx">
+      <DependentUpon>docAddAtividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docAnexosElaboracao.resx">
+      <DependentUpon>docAnexosElaboracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docElabIncluiAtv.resx">
+      <DependentUpon>docElabIncluiAtv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docElaboracao.resx">
+      <DependentUpon>docElaboracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docElaborar.resx">
+      <DependentUpon>docElaborar.vb.bak</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Elaboração\docVincularDocElaboracao.resx">
+      <DependentUpon>docVincularDocElaboracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Externos\docAnexosExternos.resx">
+      <DependentUpon>docAnexosExternos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Externos\docExternos.resx">
+      <DependentUpon>docExternos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Documentação\Registros\docRegistros.resx">
+      <DependentUpon>docRegistros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgAlteracoesControleManual.resx">
+      <DependentUpon>mgAlteracoesControleManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgAnexosControleManual.resx">
+      <DependentUpon>mgAnexosControleManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgAprovControleManual.resx">
+      <DependentUpon>mgAprovControleManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgCadControleManual.resx">
+      <DependentUpon>mgCadControleManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgCadCopiasManual.resx">
+      <DependentUpon>mgCadCopiasManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Controle\mgListaControleManual.resx">
+      <DependentUpon>mgListaControleManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Elaboração\mgApresentacaoElaboracaoManual.resx">
+      <DependentUpon>mgApresentacaoElaboracaoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Elaboração\mgFolhadeRostoElaboracaoManual.resx">
+      <DependentUpon>mgFolhadeRostoElaboracaoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Elaboração\mgListaElaboracaoManual.resx">
+      <DependentUpon>mgListaElaboracaoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Elaboração\mgTextoElaboracaoManual.resx">
+      <DependentUpon>mgTextoElaboracaoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Elaboração\mgTituloElaboracaoManual.resx">
+      <DependentUpon>mgTituloElaboracaoManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Manual de Gestão\Escopo\mgEscopo.resx">
+      <DependentUpon>mgEscopo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Melhorias\melAutorizacao.resx">
+      <DependentUpon>melAutorizacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Política e Objetivos\Objetivos\objAddUnidadeMedicao.resx">
+      <DependentUpon>objAddUnidadeMedicao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Política e Objetivos\Objetivos\objCadObjetivos.resx">
+      <DependentUpon>objCadObjetivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Cargos\cotrListaCargos.resx">
+      <DependentUpon>cotrListaCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Cadastro de Senhas\configSenhasPrincipal.resx">
+      <DependentUpon>configSenhasPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Cadastros Básicos\configListaBasico.resx">
+      <DependentUpon>configListaBasico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Competência e Treinamentos\Cargos\cotrCadCargos.resx">
+      <DependentUpon>cotrCadCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Cadastros Básicos\configCadCargos.resx">
+      <DependentUpon>configCadCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Opções de Sistema\configOpcoesPrincipal.resx">
+      <DependentUpon>configOpcoesPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Configurações\Preferências de Usuário\configPrefUsuarios.resx">
+      <DependentUpon>configPrefUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Geral\geralCadAnexo.resx">
+      <DependentUpon>geralCadAnexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Geral\geralCadContato.resx">
+      <DependentUpon>geralCadContato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Melhorias\melEstruturado.resx">
+      <DependentUpon>melEstruturado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Melhorias\melListaMelhorias.resx">
+      <DependentUpon>melListaMelhorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Melhorias\melCadMelhorias.resx">
+      <DependentUpon>melCadMelhorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Política e Objetivos\Politicas\poliCadPolitica.resx">
+      <DependentUpon>poliCadPolitica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Política e Objetivos\Objetivos\objListaObjetivos.resx">
+      <DependentUpon>objListaObjetivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Política e Objetivos\Politicas\poliListaPolitica.resx">
+      <DependentUpon>poliListaPolitica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\principal.resx">
+      <DependentUpon>principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Produtos e Processos\Processos\procCadProcessos.resx">
+      <DependentUpon>procCadProcessos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Produtos e Processos\Processos\procListaProcessos.resx">
+      <DependentUpon>procListaProcessos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Produtos e Processos\Produtos\prodCadClassificacao.resx">
+      <DependentUpon>prodCadClassificacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Produtos e Processos\Produtos\prodCadProdutos.resx">
+      <DependentUpon>prodCadProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Produtos e Processos\Produtos\prodListaProdutos.resx">
+      <DependentUpon>prodListaProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadControleAC.resx">
+      <DependentUpon>projCadControleAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadEstagios5w2h.resx">
+      <DependentUpon>projCadEstagios5w2h.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadProjeto.resx">
+      <DependentUpon>projCadProjeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadEquipe.resx">
+      <DependentUpon>projCadEquipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Ocorrências\projListaOcorrencias.resx">
+      <DependentUpon>projListaOcorrencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadRecursos.resx">
+      <DependentUpon>projCadRecursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadRisco.resx">
+      <DependentUpon>projCadRisco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadControleVerificacao.resx">
+      <DependentUpon>projCadControleVerificacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadControleValidacao.resx">
+      <DependentUpon>projCadControleValidacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Resultados\projListaResultados.resx">
+      <DependentUpon>projListaResultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projPlanodeProjeto.resx">
+      <DependentUpon>projPlanodeProjeto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projListaProjetos.resx">
+      <DependentUpon>projListaProjetos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadObjetivoEstruturado.resx">
+      <DependentUpon>projCadObjetivoEstruturado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadRevisoes.resx">
+      <DependentUpon>projCadRevisoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Ocorrências\projRegOcorrências.resx">
+      <DependentUpon>projRegOcorrências.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Resultados\projRegResultados.resx">
+      <DependentUpon>projRegResultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Projetos\Projetos\projCadEstagiosAtividade.resx">
+      <DependentUpon>projCadEstagiosAtividade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemColaboradores.resx">
+      <DependentUpon>rptListagemColaboradores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemCargos.resx">
+      <DependentUpon>rptListagemCargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemAreas.resx">
+      <DependentUpon>rptListagemAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioDados.resx">
+      <DependentUpon>rptUnitarioDados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioReunioes.resx">
+      <DependentUpon>rptUnitarioReunioes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioDecisoes.resx">
+      <DependentUpon>rptUnitarioDecisoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioFornecedores.resx">
+      <DependentUpon>rptUnitarioFornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemClientes.resx">
+      <DependentUpon>rptListagemClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioProjetos.resx">
+      <DependentUpon>rptUnitarioProjetos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptUnitarioPolitica.resx">
+      <DependentUpon>rptUnitarioPolitica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemPolitica.resx">
+      <DependentUpon>rptListagemPolitica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rptListagemProjetos.resx">
+      <DependentUpon>rptListagemProjetos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Img\" />
+    <Folder Include="Manager\Configurações\Cadastro de Senhas\Classes\" />
+    <Folder Include="Manager\Configurações\Preferências de Usuário\Classes\" />
+    <Folder Include="Manager\Satisfação de Clientes\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Relatórios\XML\rptListagemAreas.xml" />
+    <Content Include="Relatórios\XML\rptListagemCargos.xml" />
+    <Content Include="Relatórios\XML\rptListagemClientes.xml" />
+    <Content Include="Relatórios\XML\rptListagemColaboradores.xml" />
+    <Content Include="Relatórios\XML\rptListagemFornecedores.xml" />
+    <Content Include="Relatórios\XML\rptListagemPolitica.xml" />
+    <Content Include="Relatórios\XML\rptListagemProjetos.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioDecisoes.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioFornecedores.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioFornecedoresAvaliações.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioObjetivos.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioPolitica.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioProjetos.xml" />
+    <Content Include="Relatórios\XML\rptUnitarioReunioes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

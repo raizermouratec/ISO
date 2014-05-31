@@ -1,0 +1,539 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ISOEFACIL
+</name>
+</assembly>
+<members>
+<member name="M:ISOEFACIL.cotrRealizarTreinamentos.optColaboradores_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ PROGRAMAÇÃO COLABORADORES.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.optAreas_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ PROGRAMAÇÃO AREAS.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.cmbTipo_ChangeCommitted(System.Object,System.EventArgs)">
+	<summary>
+ PROGRAMAÇÃOTIPO.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.cmbNivel_ChangeCommitted(System.Object,System.EventArgs)">
+	<summary>
+ PROGRAMAÇÃO NIVEL.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.CriaFrequencia">
+	<summary>
+ CRIAÇÃO DE FREQUENCIA.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.botFinalizarFrequencia_Click(System.Object,System.EventArgs)">
+	<summary>
+ Finalizar Treinamento.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.AtualizarStatus">
+	<summary>
+ PROGRAMAÇÃO ATUALIZAR STATUS.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.carregaListaFreqeuncia">
+	<summary>
+ Carrega Lista de Frequencia.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.gridFrequencia_Click(System.Object,System.EventArgs)">
+	<summary>
+ CLICK NO GRID FREQUENCIA.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizarTreinamentos.optAcaoEficazSim_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Acao Eficacia
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:ISOEFACIL.rptUnitarioReunioes.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioReunioes.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioReunioes.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarTipoDoc">
+	<summary>
+ Carrega a lista de tipos de documentos.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarTipoDocComposicao">
+	<summary>
+ Carrega a lista de tipos de documentos Composição.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregarListComposicao">
+	<summary>
+ Carrega a lista de tipos de Composicao.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.carregaListAtividades">
+	<summary>
+ Carrega a Lista de Atividades.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridTpDocComposicao_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid Tipo Coomposição.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridAtvdDoc_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid ATividades
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.gridUsuarioAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Grid Aprovadores Selecionados.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.C1Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão [ =&gt; ] 
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.cmbCargoAprovador_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+ Carrega Lista de Cargo Aprovador.
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigDocs.botSalvarAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão Salvar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.botCancelarAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botão Cancelar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docConfigDocs.botAddAprovador_Click(System.Object,System.EventArgs)">
+	<summary>
+ Adiciona na Lista os Aprovadores selecionados.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:ISOEFACIL.rptListagemCargos.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemCargos.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemCargos.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.docCadDocNovo.isEdit">
+ Variavel global que contera o valor passado
+
+</member><member name="F:ISOEFACIL.docCadDocNovo.ANEXO">
+ ANEXO
+
+</member><member name="P:ISOEFACIL.docCadDocNovo.Documentos">
+ Pega Id 
+
+</member><member name="F:ISOEFACIL.rptUnitarioDecisoes.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioDecisoes.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioDecisoes.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.rptListagemClientes.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemClientes.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemClientes.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="M:ISOEFACIL.DocContDoc.ControlaTab">
+	<summary>
+ Controla as tabs. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botNovo_Click(System.Object,System.EventArgs)">
+	<summary>
+ Controle de Novo Documento...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botEdit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Controle de Edição de Documentos...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botRevisao_Click(System.Object,System.EventArgs)">
+	<summary>
+ Controle de revisão...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botCancelar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Controle de Cancelamento do Documento...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botSalvarEm_Click(System.Object,System.EventArgs)">
+	<summary>
+ Controle de Salvar em...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.botAprovar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Aprova em definitivo o documento...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.DocContDoc.btSendEmailElab_Click(System.Object,System.EventArgs)">
+ Enviar Email...
+
+</member><member name="M:ISOEFACIL.DocContDoc.SendEmail(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ Metodo de envio de email... 
+
+</member><member name="F:ISOEFACIL.docExternos.isEdit">
+ Variavel global que contera o valor passado
+
+</member><member name="P:ISOEFACIL.docExternos.DocExternos">
+ Pega Id Contrato
+
+</member><member name="M:ISOEFACIL.docExternos.botAnexo_Click(System.Object,System.EventArgs)">
+	<summary>
+ Anexos.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docExternos.botIncluir_Click(System.Object,System.EventArgs)">
+	<summary>
+ Incluir
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docExternos.botEditar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Editar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docExternos.botExcluir_Click(System.Object,System.EventArgs)">
+	<summary>
+ Excluir
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docExternos.botUltimaData_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ultima Data.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docExternos.botVisualizar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Visualizar.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:ISOEFACIL.rptListagemColaboradores.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemColaboradores.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemColaboradores.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.docContRevisar.idDoc">
+ Variavel global que contera o valor passado
+
+</member><member name="P:ISOEFACIL.docContRevisar.Documentos">
+ Pega Id 
+
+</member><member name="P:ISOEFACIL.docContRevisar.Revisaos">
+ Pega Revisao
+
+</member><member name="M:ISOEFACIL.docContRevisar.botSalvar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Salvar...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docContRevisar.botCancelar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cancelar...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:ISOEFACIL.audCadAuditores.FOTO">
+ FOTO
+
+</member><member name="F:ISOEFACIL.audCadAuditores.isEdit">
+ Variavel global que contera o valor passado
+
+</member><member name="F:ISOEFACIL.audCadAuditores.ANEXO">
+ ANEXO
+
+</member><member name="P:ISOEFACIL.audCadAuditores.Auditor">
+ Pega Id Contrato
+
+</member><member name="P:ISOEFACIL.audCadAuditores.ClienteS">
+ Pega Id Contrato
+
+</member><member name="F:ISOEFACIL.rptUnitarioDados.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioDados.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioDados.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.docAnexosExternos.isEdit">
+ Variavel global que contera o valor passado
+
+</member><member name="P:ISOEFACIL.docAnexosExternos.DocExternos">
+ Pega Id
+
+</member><member name="M:ISOEFACIL.acAddListaItensAdd.contador">
+	<summary>
+ CONTADOR.
+ </summary>
+</member><member name="F:ISOEFACIL.rptUnitarioFornecedores.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioFornecedores.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioFornecedores.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.rptUnitarioProjetos.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioProjetos.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioProjetos.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.rptUnitarioPolitica.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioPolitica.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptUnitarioPolitica.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.docContCancelar.idDoc">
+ Variavel global que contera o valor passado
+
+</member><member name="P:ISOEFACIL.docContCancelar.Documentos">
+ Pega Id 
+
+</member><member name="M:ISOEFACIL.docContCancelar.botSalvar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Salvar Cancelamento...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.docContCancelar.botCancelar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Sair do Cancelamento...
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ISOEFACIL.cotrRealizacaoTreinamentos.botRealizar_Click(System.Object,System.EventArgs)">
+	<summary>
+ Realizar
+ </summary>
+</member><member name="M:ISOEFACIL.cotrRealizacaoTreinamentos.botRelatorio_Click(System.Object,System.EventArgs)">
+	<summary>
+ Relatório
+ </summary>
+</member><member name="F:ISOEFACIL.rptListagemPolitica.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemPolitica.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemPolitica.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="F:ISOEFACIL.rptListagemProjetos.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemProjetos.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemProjetos.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member><member name="M:ISOEFACIL.docConfigAddDocs.btAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ Salvar
+ </summary>
+</member><member name="F:ISOEFACIL.mgAnexosControleManual.ANEXO">
+ ANEXO
+
+</member><member name="P:ISOEFACIL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ISOEFACIL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ISOEFACIL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:ISOEFACIL.rptListagemAreas.sNameXML">
+	<summary>
+ *Definições: 
+ [arquivo.xml]
+ [nome do relatório]
+ [Pasta onde está o arquivo]
+ [Query para o relatório]
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemAreas.GetFilePath(System.String)">
+	<summary>
+ Metodo para pegar o caminho do Arquivo.
+ </summary>
+</member><member name="M:ISOEFACIL.rptListagemAreas.LoadReports">
+	<summary>
+ Load Report
+ </summary>
+</member>
+</members>
+</doc>
